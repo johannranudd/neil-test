@@ -1,20 +1,111 @@
-* {
+.hidden-menu {
+  position: absolute;
+  top: 0;
+  right: -250px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #313131;
+  width: 200px;
+  height: 80vh;
   padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
+.hidden-menu a {
+  display: inline-block;
+  color: white;
+  padding: 20px 20px;
+  width: 100%;
 }
 
-a {
-  text-decoration: none;
+.hidden-menu a:hover {
+  background: #000;
 }
 
-ul {
-  list-style-type: none;
+@media (min-width: 768px) {
+  .hidden-menu {
+    display: none;
+  }
+}
+
+.show-menu {
+  position: absolute;
+  right: -200px;
+}
+
+.main-nav {
+  width: 90%;
+  margin: auto;
+  max-width: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 5%;
+  z-index: 99;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  height: 70px;
+}
+
+.main-nav h1 {
+  color: white;
+}
+
+.show-main-nav {
+  position: absolute;
+  right: 200px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .show-main-nav {
+    right: 5%;
+  }
+}
+
+.main-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 300px;
+    height: 70px;
+  }
+}
+
+.main-menu a {
+  color: white;
+}
+
+.main-menu a:hover {
+  opacity: 0.6;
+}
+
+#hamburger {
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
 }
 
 .item-1 {
@@ -35,8 +126,8 @@ ul {
 .carousel-inner {
   position: absolute;
   right: 0;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .show-carousel-inner {
@@ -44,8 +135,20 @@ ul {
   right: 200px;
 }
 
+@media (min-width: 768px) {
+  .show-carousel-inner {
+    right: 0;
+  }
+}
+
 .carousel-item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .carousel-item:before {
@@ -61,13 +164,20 @@ ul {
 }
 
 .carousel-caption {
-  position: absolute;
-  bottom: 50%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  left: 0;
-  right: 0;
-  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .carousel-caption h5 {
@@ -80,46 +190,32 @@ ul {
   }
 }
 
-.hidden-menu {
+.carousel-control-prev,
+.carousel-control-next {
+  height: 80vh;
+}
+
+.fb-page {
   position: absolute;
-  top: 0;
-  right: -200px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  top: 700px;
 }
 
-.show-menu {
-  position: absolute;
-  right: 0px;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body {
+  overflow-x: hidden;
 }
 
-.main-menu {
-  display: none;
+a {
+  text-decoration: none;
 }
 
-@media (min-width: 768px) {
-  .main-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 768px) {
-  #hamburger {
-    display: none;
-  }
+ul {
+  list-style-type: none;
 }
 /*# sourceMappingURL=styles.css.map */
