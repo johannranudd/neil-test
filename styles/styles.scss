@@ -1,0 +1,15 @@
+@import "./core";
+@import "./carousel";
+@import './navbar';
+
+@mixin flex-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin w-90-max-1400 {
+    width: 50%;
+    margin: auto;
+    max-width: 1500px;
+}
