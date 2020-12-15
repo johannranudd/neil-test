@@ -109,17 +109,17 @@
 }
 
 .item-1 {
-  background: url("../img/image1-rez.jpeg") no-repeat center center/cover;
+  background: url("../img/image-1.jpg") no-repeat center center/cover;
   height: 80vh;
 }
 
 .item-2 {
-  background: url("../img/image2-rez.jpeg") no-repeat center center/cover;
+  background: url("../img/image-2.jpg") no-repeat center center/cover;
   height: 80vh;
 }
 
 .item-3 {
-  background: url("../img/image3-rez.jpeg") no-repeat center center/cover;
+  background: url("../img/image-3.jpg") no-repeat center center/cover;
   height: 80vh;
 }
 
