@@ -35,13 +35,15 @@ ul {
 .carousel-inner {
   position: absolute;
   right: 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .show-carousel-inner {
   position: absolute;
   right: 200px;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 @media (min-width: 768px) {
@@ -87,6 +89,10 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+  position: absolute;
+  top: 0;
 }
 
 .carousel-caption h5 {
@@ -96,6 +102,26 @@ ul {
 @media (min-width: 400px) {
   .carousel-caption h5 {
     font-size: 2rem;
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes bounce {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
   }
 }
 
@@ -120,8 +146,8 @@ ul {
   position: absolute;
   right: 5%;
   z-index: 99;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   height: 70px;
 }
 
@@ -133,6 +159,8 @@ ul {
   position: absolute;
   right: 200px;
   padding-right: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media (min-width: 768px) {
@@ -181,6 +209,28 @@ ul {
 .show-menu {
   position: absolute;
   right: -200px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-animation: menupadding .4s;
+          animation: menupadding .4s;
+}
+
+@-webkit-keyframes menupadding {
+  from {
+    width: 250px;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes menupadding {
+  from {
+    width: 250px;
+  }
+  to {
+    width: 200px;
+  }
 }
 
 .main-menu {

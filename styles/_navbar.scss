@@ -6,7 +6,7 @@
   position: absolute;
   right: 5%;
   z-index: 99;
-  transition: 0.4s;
+  transition: 0.3s;
   height: 70px;
   h1 {
     color: white;
@@ -17,6 +17,7 @@
   position: absolute;
   right: 200px;
   padding-right: 20px;
+  transition: 0.4s;
   @media (min-width: 768px) {
     right: 5%;
   }
@@ -53,6 +54,12 @@
 .show-menu {
   position: absolute;
   right: -200px;
+  transition: .4s;
+  animation: menupadding .4s;
+  @keyframes menupadding {
+    from {width: 250px}
+    to {width: 200px}
+  }
 }
 
 .main-menu {

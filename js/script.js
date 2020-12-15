@@ -5,12 +5,8 @@ const mainNav = document.querySelector(".main-nav");
 const nextBtn = document.querySelector(".carousel-control-next");
 const prevBtn = document.querySelector(".carousel-control-prev");
 
-
 hamburger.addEventListener("click", function () {
   menu.classList.toggle("show-menu");
   carouselInner.classList.toggle("show-carousel-inner");
   mainNav.classList.toggle("show-main-nav");
-//   nextBtn.classList.toggle('tranformX-100');
-//   prevBtn.classList.toggle('tranformX-100');
-
 });
