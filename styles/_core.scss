@@ -1,17 +1,29 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+@mixin flex-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin w-90-max-1400 {
+  width: 90%;
+  margin: auto;
+  max-width: 1500px;
 }
