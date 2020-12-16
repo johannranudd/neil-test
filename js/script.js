@@ -9,4 +9,5 @@ hamburger.addEventListener("click", function () {
   menu.classList.toggle("show-menu");
   carouselInner.classList.toggle("show-carousel-inner");
   mainNav.classList.toggle("show-main-nav");
+  hamburger.classList.toggle('cross');
 });
