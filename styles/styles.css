@@ -179,7 +179,7 @@ figure img {
 
 @media (min-width: 768px) {
   .show-main-nav {
-    right: 0%;
+    right: 0;
   }
 }
 
