@@ -4,6 +4,7 @@
   width: 100%;
   @include flex-sb-c();
   position: absolute;
+  right: 0;
   padding: 0 5%;
   z-index: 99;
   transition: 0.3s;
@@ -16,7 +17,6 @@
 .show-main-nav {
   position: absolute;
   right: 200px;
-  // padding-right: 20px;
   transition: 0.4s;
   @media (min-width: 768px) {
     right: 0%;
