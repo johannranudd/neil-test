@@ -35,3 +35,7 @@
     @include grid-auto-minmax-200-1();
   }
 }
+
+.facebook-widget {
+  @include w-80-max-1000();
+}

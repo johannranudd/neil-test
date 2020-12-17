@@ -214,12 +214,6 @@ figure img {
   color: white;
 }
 
-@media (min-width: 768px) {
-  .hidden-menu {
-    display: none;
-  }
-}
-
 .show-menu {
   position: absolute;
   right: -200px;
@@ -244,6 +238,30 @@ figure img {
   }
   to {
     width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .show-menu {
+    -webkit-transition: 2s;
+    transition: 2s;
+    right: -250px;
+  }
+  @-webkit-keyframes menupadding {
+    from {
+      width: 250px;
+    }
+    to {
+      width: 200px;
+    }
+  }
+  @keyframes menupadding {
+    from {
+      width: 250px;
+    }
+    to {
+      width: 200px;
+    }
   }
 }
 
@@ -368,5 +386,11 @@ figure img {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 1.5rem;
   }
+}
+
+.facebook-widget {
+  width: 80%;
+  margin: auto;
+  max-width: 1000px;
 }
 /*# sourceMappingURL=styles.css.map */
