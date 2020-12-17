@@ -371,7 +371,7 @@ figure figcaption {
   color: #000;
 }
 
-.grid-c-5 {
+.front-page-figures {
   padding: 20px 0;
   width: 95%;
   margin: auto;
@@ -379,10 +379,15 @@ figure figcaption {
 }
 
 @media (min-width: 768px) {
-  .grid-c-5 {
+  .front-page-figures {
     width: 80%;
     margin: auto;
     max-width: 1500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-c-5 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
