@@ -27,23 +27,11 @@
   }
 }
 
-.front-page-figures {
+.index-section-1 {
   padding: 20px 0;
   @include w-95-max-1400();
   @media (min-width: 768px) {
-    @include w-80-max-1400(); 
-  }
-}
-
-.grid-c-5 { 
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2.5rem;
-  }
-  @media (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2.5rem;
+    @include w-80-max-1000();
+    @include grid-auto-minmax-200-1();
   }
 }

@@ -1,10 +1,10 @@
 // !navbar
 
 .main-nav {
-  @include w-90-max-1400();
+  width: 100%;
   @include flex-sb-c();
   position: absolute;
-  right: 5%;
+  padding: 0 5%;
   z-index: 99;
   transition: 0.3s;
   height: 70px;
@@ -16,10 +16,10 @@
 .show-main-nav {
   position: absolute;
   right: 200px;
-  padding-right: 20px;
+  // padding-right: 20px;
   transition: 0.4s;
   @media (min-width: 768px) {
-    right: 5%;
+    right: 0%;
   }
 }
 

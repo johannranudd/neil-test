@@ -18,30 +18,11 @@ ul {
 }
 
 figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 20px 0;
-  margin: 0;
 }
 
 figure img {
   width: 100%;
-  max-width: 400px;
-  min-width: 150px;
-}
-
-figure figcaption {
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
 }
 
 .item-1 {
@@ -69,8 +50,8 @@ figure figcaption {
 .show-carousel-inner {
   position: absolute;
   right: 200px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media (min-width: 768px) {
@@ -166,9 +147,7 @@ figure figcaption {
 }
 
 .main-nav {
-  width: 90%;
-  margin: auto;
-  max-width: 1500px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +158,7 @@ figure figcaption {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  right: 5%;
+  padding: 0 5%;
   z-index: 99;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -193,14 +172,13 @@ figure figcaption {
 .show-main-nav {
   position: absolute;
   right: 200px;
-  padding-right: 20px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 @media (min-width: 768px) {
   .show-main-nav {
-    right: 5%;
+    right: 0%;
   }
 }
 
@@ -371,38 +349,23 @@ figure figcaption {
   color: #000;
 }
 
-.front-page-figures {
+.index-section-1 {
   padding: 20px 0;
   width: 95%;
   margin: auto;
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
 @media (min-width: 768px) {
-  .front-page-figures {
+  .index-section-1 {
     width: 80%;
     margin: auto;
-    max-width: 1500px;
-  }
-}
-
-@media (min-width: 768px) {
-  .grid-c-5 {
+    max-width: 1000px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .grid-c-5 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2.5rem;
+    -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 1.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
