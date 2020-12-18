@@ -370,7 +370,7 @@ figure img {
 
 .index-section-1 {
   padding: 20px 0;
-  width: 95%;
+  width: 90%;
   margin: auto;
   max-width: 1400px;
 }
@@ -388,13 +388,87 @@ figure img {
   }
 }
 
-.facebook-widget {
-  width: 80%;
+.index-section-2 {
+  width: 90%;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1400px;
 }
 
-.instagram-widget {
-  width: 50%;
+@media (min-width: 768px) {
+  .index-section-2 {
+    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+  }
+}
+
+.index-section-2 .instagram-section .widget-text {
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .index-section-2 .instagram-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .index-section-2 .instagram-section .instagram-widget {
+    width: 50%;
+  }
+  .index-section-2 .instagram-section .widget-text {
+    width: 35%;
+    text-align: right;
+  }
+  .index-section-2 .instagram-section .widget-text h3 {
+    padding: 20px 0;
+  }
+}
+
+.index-section-2 .facebook-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-section-2 .facebook-widget div {
+  padding: 40px 0;
+  max-width: 350px;
+}
+
+@media (min-width: 768px) {
+  .index-section-2 .facebook-widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .index-section-2 .facebook-widget div {
+    width: 50%;
+  }
+  .index-section-2 .facebook-widget div h3 {
+    padding: 20px 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
