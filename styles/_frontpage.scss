@@ -46,17 +46,14 @@
       padding: 40px 0;
     }
     @media (min-width: 768px) {
-      display: flex;
+      @include flex-sb-c();
       flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
       .instagram-widget {
         width: 50%;
       }
       .widget-text {
         width: 35%;
         text-align: right;
-
         h3 {
           padding: 20px 0;
         }
@@ -64,23 +61,26 @@
     }
   }
   .facebook-widget {
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
+    @include flex-col-c();
     div {
       padding: 40px 0;
       max-width: 350px;
     }
     @media (min-width: 768px) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-sb-c();
+      flex-direction: row;
       div {
         width: 50%;
+        max-width: 1000px;
+        padding: 40px 0 0 20px;
         h3 {
           padding: 20px 0;
         }
+      }
+    }
+    @media (min-width: 900px) {
+      div {
+        padding: 40px 0;
       }
     }
   }
